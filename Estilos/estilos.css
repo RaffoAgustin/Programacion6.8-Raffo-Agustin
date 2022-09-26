@@ -1,0 +1,266 @@
+l*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Bradley Hand ITC;
+}
+
+header{
+    background-color: rgb(252, 216, 55);
+}
+ 
+header .logo{
+    margin: 0;
+    padding: 15px 25px;
+    font-weight: bold;
+    color: wheat;
+    font-size: 35px;
+}
+
+header .contenedor-principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+#menu1{
+    font-size: 25px;
+}
+#menu2{
+    font-size: 25px;
+}
+#menu3{
+    font-size: 25px;
+}
+#menu4{
+    font-size: 25px;
+}
+
+ a:hover{
+    color: white;
+}
+
+.contenedor-principal{
+    max-width: 1400px; 
+    margin: auto;
+}
+
+.carousel-inner img{
+    width: 100%;
+    height: 350px;
+    background-size: cover; 
+}
+
+#musicaa .contenedor-cuerpo{
+    background-color: rgb(252, 216, 55);
+    text-align: center;
+    padding: 80px 12px;
+    margin-top: -3%;
+}
+
+.texto p{
+    font-size: 20px;
+    line-height: 2; 
+    margin-top: -20px;
+}
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{font-size: 1.25em;}
+ul{list-style: none;}
+li{font-size: 1.25em;}
+
+.img-contenedor{
+    background-image: url("../imagenes/img4.jpg");
+    background-size: cover;
+    background-position: center center;  
+    height: 300px;
+    width: 350px;
+    border-radius: 25px;
+}
+
+
+.Sector-Fotos{
+    margin-top: -2%;
+}
+
+.Sector-Fotos h2{
+    color: #395780;
+    margin-top: 1%;
+    margin-left: 9%;
+    font-weight: bold;
+    font-size: 45px;
+    text-align: left;
+}
+
+.Sector-Fotos img{
+    width: 37g0px;
+    height: 350px;
+    margin-top: 10%;
+    margin-left: 15%;
+    border: 2px solid #395780;
+    border-radius: 10%;
+}
+
+#Contenedor-fotos{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-top:1%;
+}
+
+.ultima-foto{
+    color: #395780;
+    text-align: center;
+    margin-top: 300%;
+}
+
+.galeria{
+    background-color: white;
+    width: 350px;
+    margin: 10px;
+    border: 2px solid #395780;
+    box-shadow:2px 2px 2px 0 #395780; 
+    transition: all 1s; 
+    transition: 1.3 ease-in-out; 
+    margin-left: 3%;
+}
+
+.galeria:hover{
+    border: 2px solid #395780;
+    transform: scale(1.4);
+}
+
+.foto{
+    height: 200px;
+    width: 345px;
+    background-size: cover;
+}
+
+.autor{
+    text-transform: uppercase;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.foto1 {
+    background-image: url(../Imagenes/a16.jpg);
+}
+.foto2 {
+    background-image: url(../Imagenes/a17.jpg);
+}
+.foto3 {
+    background-image: url(../Imagenes/a18.jpg);
+}
+
+@media(min-width:850px){
+    header{
+        position: relative; 
+        width: 100%;
+    }
+    header .contenedor-principal{
+        flex-direction: row; 
+        justify-content: space-between;
+    }
+    header nav{
+        flex-direction: row; 
+        padding-bottom: 0;
+    }
+    .carousel-inner img{
+        width: 100%;
+        height: 600px;
+        background-size: cover; 
+    }
+    #musicaa .contenedor-cuerpo{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #musicaa .texto{
+        width: 56%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #musicaa h2{
+        margin-top: 0px;
+    }
+
+    #musicaa .img-contenedor{
+        background-size: cover; 
+        background-position: center center;  
+        height: 380px;
+        width: 600px;
+        border-radius: 25px;
+    }
+}
+
+#parrafo {
+    font-size:x-large;
+}
+.texto2 p{
+    background-color: white;
+    font-size: 20px;
+    line-height: 2;
+    margin-top: -20px;
+}
+
+.gred-contenedor{
+    background-color: white;
+    display: grid;
+    grid-template-columns:repeat(2,2fr);
+    grid-auto-rows: 150px;
+    padding: 15px;
+   grid-gap: 10px;
+}
+
+.gred-imagen{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    background-position: center center;
+}
+.gred-item{
+    position: relative;
+}
+
+.gred-texto{
+    position: absolute;
+    bottom: 0;
+    color:white;
+    font-size: 15px;
+    background: linear-gradient(
+        rgba(191, 143, 13, 0), rgba(0,0,0,1)
+    );
+    width: 100%;
+    margin: 0;
+    padding: 5px;
+}
+
+#parte2 {
+    margin: 50px;
+}
